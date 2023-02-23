@@ -76,7 +76,7 @@ class FaceRecognition:
                         confidence = face_confidence(face_distances[best_match_index])
                     if name == "Nepoznato":
                         time.sleep(5)
-                        img_name = "/home/bigfella/master/facerec/intruder/image.jpg"
+                        img_name = "/home/bigfella/Desktop/v3/intruder/image.jpg"
                         cv2.imwrite(img_name, frame)
                         
 

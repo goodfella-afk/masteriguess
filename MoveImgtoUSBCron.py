@@ -5,9 +5,8 @@ from emailme import main
 
 
 # Paths,
-imgdir = "/home/bigfella/master/facerec/intruder"
-
-Imgsrc = '/home/bigfella/master/facerec/intruder/image.jpg'
+imgdir = "/home/bigfella/Desktop/v3/intruder"
+Imgsrc = '/home/bigfella/Desktop/v3/intruder/image.jpg'
 
 
 

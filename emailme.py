@@ -9,7 +9,6 @@ from getcontacts import get_contacts
 from email.mime.image import MIMEImage
 import os
 
-attach_file_name=''
 MY_ADDRESS = 'zivkovicbusiness@icloud.com'
 PASSWORD = 'gnbe-hoqe-bozy-kvmc'
 
@@ -33,19 +32,19 @@ def main():
         print(message)
 
         # Read img
-        with open('/home/bigfella/master/facerec/intruder/image.jpg', 'rb') as f:
+        with open('/home/bigfella/Desktop/v3/intruder/image.jpg', 'rb') as f:
             img_data = f.read()
 
         # setup the parameters of the message
         msg['From']=MY_ADDRESS
         msg['To']=email
-        msg['Subject']="Intruder alert"
+        msg['Subject']="NEPOZNATA OSOBA"
         
         # add in the message body
         msg.attach(MIMEText(message, 'plain'))
 
         # add attachment
-        image = MIMEImage(img_data, name=os.path.basename("/home/bigfella/master/facerec/intruder/image.jpg"))
+        image = MIMEImage(img_data, name=os.path.basename("/home/bigfella/Desktop/v3/intruder/image.jpg"))
         msg.attach(image)
         
 
